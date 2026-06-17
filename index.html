@@ -6,51 +6,19 @@
   <title>vSee Box Channel Guide – June 2026</title>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
-    body{
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-      background:linear-gradient(135deg,#0e0e64 0%,#5566bb 28%,#c8d4f0 38%,#8833bb 60%,#cc1ecc 100%);
-      background-attachment:fixed;min-height:100vh;
-    }
-    .title-bar{
-      background:linear-gradient(135deg,#0e0e64 0%,#5566bb 28%,#c8d4f0 38%,#8833bb 60%,#cc1ecc 100%);
-      padding:1.2rem 2rem;text-align:center;
-      display:flex;justify-content:space-between;align-items:center;
-      box-shadow:0 2px 12px rgba(0,0,0,.4);
-    }
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:linear-gradient(135deg,#0e0e64 0%,#5566bb 28%,#c8d4f0 38%,#8833bb 60%,#cc1ecc 100%);background-attachment:fixed;min-height:100vh;}
+    .title-bar{background:linear-gradient(135deg,#0e0e64 0%,#5566bb 28%,#c8d4f0 38%,#8833bb 60%,#cc1ecc 100%);padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px rgba(0,0,0,.4);}
     .title-bar span{font-size:1.4rem;font-weight:700;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.5)}
-    .search-bar{
-      display:flex;gap:1rem;padding:.8rem 2rem;
-      background:rgba(0,0,0,.35);border-bottom:1px solid rgba(255,255,255,.1);
-      flex-wrap:wrap;align-items:center;
-    }
-    .search-bar input{
-      background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.25);
-      color:#f0f0f0;padding:.4rem .8rem;border-radius:5px;font-size:.85rem;outline:none;width:240px;
-    }
+    .search-bar{display:flex;gap:1rem;padding:.8rem 2rem;background:rgba(0,0,0,.35);border-bottom:1px solid rgba(255,255,255,.1);flex-wrap:wrap;align-items:center;}
+    .search-bar input{background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.25);color:#f0f0f0;padding:.4rem .8rem;border-radius:5px;font-size:.85rem;outline:none;width:240px;}
     .search-bar input::placeholder{color:rgba(255,255,255,.4)}
     .count{margin-left:auto;font-size:.8rem;color:rgba(255,255,255,.5)}
     .table-wrap{overflow:auto;height:calc(100vh - 130px);padding-bottom:2rem}
     table{width:100%;border-collapse:collapse;font-size:.88rem}
-
-    thead tr.col-header th{
-      background:#7030A0;
-      padding:.6rem 1rem;text-align:left;font-weight:700;
-      text-transform:uppercase;letter-spacing:.06em;font-size:.78rem;
-      cursor:pointer;user-select:none;white-space:nowrap;
-      border-bottom:2px solid rgba(255,255,255,.2);
-      position:sticky;top:0;z-index:10;
-    }
+    thead tr.col-header th{background:#7030A0;padding:.6rem 1rem;text-align:left;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.78rem;cursor:pointer;user-select:none;white-space:nowrap;border-bottom:2px solid rgba(255,255,255,.2);position:sticky;top:0;z-index:10;}
     thead tr.col-header th:hover{filter:brightness(1.2)}
-    thead tr.filter-row th{
-      background:rgba(0,0,20,.6);padding:.35rem .6rem;
-      position:sticky;top:37px;z-index:10;
-      border-bottom:1px solid rgba(255,255,255,.15);
-    }
-    thead tr.filter-row select,
-    thead tr.filter-row input{
-      width:100%;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.2);
-      color:#f0f0f0;padding:.28rem .5rem;border-radius:4px;font-size:.78rem;outline:none;
-    }
+    thead tr.filter-row th{background:rgba(0,0,20,.6);padding:.35rem .6rem;position:sticky;top:37px;z-index:10;border-bottom:1px solid rgba(255,255,255,.15);}
+    thead tr.filter-row select,thead tr.filter-row input{width:100%;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.2);color:#f0f0f0;padding:.28rem .5rem;border-radius:4px;font-size:.78rem;outline:none;}
     thead tr.filter-row select option{background:#001040}
     tbody tr{border-bottom:1px solid rgba(255,255,255,.06)}
     tbody tr:hover td{filter:brightness(1.25)}
@@ -60,17 +28,11 @@
   </style>
 </head>
 <body>
-
-<div class="title-bar">
-  <span><span style="color:#FFFFFF; font-weight:bold">vSee Box Channel Guide</span></span>
-  <span><span style="color:#FFFFFF; font-weight:bold">JUNE 2026</span></span>
-</div>
-
+<div class="title-bar"><span><span style="color:#FFFFFF; font-weight:bold">vSee Box Channel Guide</span></span><span><span style="color:#FFFFFF; font-weight:bold">JUNE 2026</span></span></div>
 <div class="search-bar">
   <input type="text" id="globalSearch" placeholder="Search all columns…" oninput="applyFilters()">
   <span class="count" id="count"></span>
 </div>
-
 <div class="table-wrap">
   <table id="tbl">
     <thead>
@@ -90,7 +52,7 @@
 <option value="EPL">EPL</option>
 <option value="ESPN">ESPN</option>
 <option value="ESPN MULTIVIEW">ESPN MULTIVIEW</option>
-<option value="ESPN+">ESPN+</option>
+<option value="ESPN+ &amp; SEC+">ESPN+ &amp; SEC+</option>
 <option value="F1">F1</option>
 <option value="FLO">FLO</option>
 <option value="LATINO">LATINO</option>
@@ -1406,14 +1368,13 @@
     <tr data-folder="BTN+2"><td style="background:#002060"><span style="color:#CEEBF6; font-weight:bold">BTN+</span></td><td style="background:#002060"><span style="color:#6EC4E5; font-weight:bold">BTN+2 (Big Ten Network Plus 2) (4 Channels)</span></td><td style="background:#002060"><span style="color:#FF8400; font-weight:bold">BTN+2</span></td></tr>
     <tr data-folder="EPL"><td style="background:#002060"><span style="color:#CEEBF6; font-weight:bold">EPL</span></td><td style="background:#002060"><span style="color:#6EC4E5; font-weight:bold">EPL (European Premier League) 11 Channels</span></td><td style="background:#002060"><span style="color:#FF8400; font-weight:bold">EPL</span></td></tr>
     <tr data-folder="ESPN MULTIVIEW"><td style="background:#002060"><span style="color:#CEEBF6; font-weight:bold">ESPN</span></td><td style="background:#002060"><span style="color:#6EC4E5; font-weight:bold">ESPN Multiview</span></td><td style="background:#002060"><span style="color:#FF8400; font-weight:bold">ESPN MULTIVIEW</span></td></tr>
-    <tr data-folder="ESPN+"><td style="background:#002060"><span style="color:#CEEBF6; font-weight:bold">ESPN+</span></td><td style="background:#002060"><span style="color:#6EC4E5; font-weight:bold">ESPN+ &amp; SEC+ - 267 Channels</span></td><td style="background:#002060"><span style="color:#FF8400; font-weight:bold">ESPN+</span></td></tr>
+    <tr data-folder="ESPN+ &amp;amp; SEC+"><td style="background:#002060"><span style="color:#CEEBF6; font-weight:bold">ESPN+</span></td><td style="background:#002060"><span style="color:#6EC4E5; font-weight:bold">ESPN+ &amp; SEC+ - 267 Channels</span></td><td style="background:#002060"><span style="color:#FFAA00;font-weight:bold">ESPN+ &amp; SEC+</span></td></tr>
     <tr data-folder="F1"><td style="background:#002060"><span style="color:#CEEBF6; font-weight:bold">F1</span></td><td style="background:#002060"><span style="color:#6EC4E5; font-weight:bold">F1 Main - 6 Channels</span></td><td style="background:#002060"><span style="color:#FF8400; font-weight:bold">F1</span></td></tr>
     <tr data-folder="FLO"><td style="background:#002060"><span style="color:#CEEBF6; font-weight:bold">Flo</span></td><td style="background:#002060"><span style="color:#6EC4E5; font-weight:bold">Flo &amp; Dirtv - 42 channels</span></td><td style="background:#002060"><span style="color:#FF8400; font-weight:bold">FLO</span></td></tr>
     <tr data-folder="MLS"><td style="background:#002060"><span style="color:#CEEBF6; font-weight:bold">MLS</span></td><td style="background:#002060"><span style="color:#6EC4E5; font-weight:bold">MLS (42 Channels)</span></td><td style="background:#002060"><span style="color:#FF8400; font-weight:bold">MLS</span></td></tr>
     </tbody>
   </table>
 </div>
-
 <script>
   function applyFilters(){
     const g=document.getElementById('globalSearch').value.toLowerCase();
